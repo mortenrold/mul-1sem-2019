@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="UTF-8">
+        <title>Min formular</title>
+        <meta description="Her kan jeg skrive noget tekst, der bliver vist i Googles søgeresultat">
+    </head>
+    <body>
+       <!-- når brugeren trykker på Send, aktiveres action-filen - den sender data afsted -->
+        <form action="send-afsted.php">
+            <!-- formular med én linje -->
+            <p>Fornavn</p>
+            <input type="text" name="fornavn" placeholder="Skriv dit fornavn her" autocomplete="on">
+            <p>Efternavn</p>
+            <input type="text" name="efternavn" required>
+            <p>Email</p>
+            <input type="email" name="email" autofocus>
+            <!-- formular med flere linjer -->
+            <p>Kommentar</p>
+            <textarea name="comments" cols="60" rows="8"></textarea>
+            <!-- Rating-slider -->
+            <p>Hvad synes du om maden i kantinen?</p>
+            Dårlig<input type="range" name="vurdering" min="0" max="10">Mega god
+            <!-- Radioknapper -->
+            <p>Vælg køn</p>
+            Kvinde<input type="radio" name="gender" value="kvinde">
+            Mand<input type="radio" name="gender" value="mand">
+            <!-- Checkbokse -->
+            <p>Hvilke sociale medier bruger du?</p>
+            <input type="checkbox" name="some" value="FB">Facebook<br>
+            <input type="checkbox" name="some" value="insta">Instagram<br>
+            <input type="checkbox" name="some" value="arto">Arto<br>
+            <input type="checkbox" name="some" value="twitter">Twitter
+            <!-- select box (drop-down) -->
+            <p>Din bil</p>
+            <select name="bil">
+                <option>Audi</option>
+                <option>VW</option>
+                <option>Fiat</option>
+                <option>BMW</option>
+                <option>Bentley</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Send nu">
+        </form>
+        <!-- iframe: et "vindue", der viser noget fra et andet website -->
+        <iframe src="https://cphbusiness.dk" width="400" height="400">
+        </iframe>
+    </body>
+</html>
