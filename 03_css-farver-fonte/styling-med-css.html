@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Styling med CSS</title>
+        <!-- her refererer vi til fonten "Merriweather" fra Google Fonts. Jeg kan nu bruge den på mit website...  -->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet"> 
+        <meta charset="utf-8">
+        <!-- "Internt style sheet" -->
+        <style>
+            /* CSS deles op i tre dele: selector - property - value */
+            h1 {
+                color: red;
+                /* HEX-farvekode */
+                background-color: #eee;
+                font-family: arial, verdana, sans-serif;
+                font-size: 42px;
+                font-style: italic;
+                text-align: center;
+                /* text-decoration: underline; */
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                margin-left: 50px;
+                margin-right: 92px;
+                margin-top: 50px;
+                margin-bottom: 100px;
+                /* ovenstående er det samme som: margin: 100px 92px 100px 50px; (starter med toppen og går uret rundt) */
+                padding: 50px;
+                border: 8px solid orange;
+                width: 500px;
+            }
+            body {
+                /* rgb-farvekode */
+                background-color: rgb(255,204,168);
+                background-image: url("laks.jpg");
+                background-repeat: no-repeat;
+                /* background-position: center center;
+                background-attachment: fixed; */
+                background-size: cover; 
+            }
+            p {
+                font-family: merriweather, georgia, "time new roman", serif;
+                font-size: 18px;
+                font-weight: bold;
+                text-align: justify;
+                line-height: 150%;
+            }
+            a {
+                font-family: merriweather, serif;
+                color: yellow;
+                border: 2px dotted red;
+                padding: 10px;
+            }
+            a:link {
+                color: beige;
+            }
+            a:visited {
+                color: purple;
+            }
+            a:hover {
+                color: #ddd;
+                font-family: arial;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 30px;
+            }
+            a:active {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- når CSS skrives inde i et tag som en attribut, kaldes det for "inline style" -->
+        <h1 style="color: green;">Styling med CSS</h1>
+        <p style="color: blue;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quo placeat dolorem ut quod minima officia sit alias culpa, quibusdam accusamus. Quaerat culpa id, repellendus et dolor nesciunt commodi amet officia, tenetur quisquam quidem velit deserunt provident eos. Consequuntur.</p>
+        <h1>En anden overskrift</h1>
+        <a href="http://cphbusiness.dk">Dette er et link</a>
+        <a href="http://cphbusiness.dk/noget-andet.html">Et andet link</a>
+    </body>
+</html>
