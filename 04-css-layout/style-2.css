@@ -1,0 +1,43 @@
+body {
+    background-color: lightblue;
+}
+/* denne div er en "flex container".  */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 1200px;
+    align-items: flex-start;
+}
+/* # (hashtag) refererer til et ID. En ID skal være unik og må derfor kun bruges én gang på samme side  */
+#kasse1 {
+    background: #ddd;
+    width: 50%;
+}
+#kasse2 {
+    background-color: burlywood;
+    width: 50%;
+}
+.kasse3 {
+    background-color: orange;
+    margin: 40px;
+    padding: 20px;
+    border: 1px solid #333;
+}
+/* order ændrer elementets placering i layoutet */
+.special {
+    order: -1;
+}
+.tilsidst {
+    order: 1;
+}
+/* . (punktum) refererer til en klasse (class). En klasse kan bruges flere gange */
+.toben {
+    color: red;
+}
+.fireben {
+    color: lightgreen;
+}
+.highlight {
+    background-color: yellow;
+}
