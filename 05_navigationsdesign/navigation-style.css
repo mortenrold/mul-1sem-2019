@@ -1,0 +1,55 @@
+/* browser reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+section {
+    margin-bottom: 60px;
+}
+.simple {
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    padding: 15px;
+}
+.simple a {
+    text-decoration: none;
+    color: coral;
+}
+.simple nav a:hover {
+    color: dodgerblue;
+}
+.simple nav {
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+}
+
+/* faneblade */
+.tabs {
+    border-bottom: 1px solid #666;
+    display: flex;
+    justify-content: center;
+}
+.tabs nav {
+    display: flex;
+    width: 600px;
+    justify-content: space-around;
+    font-family: helvetica, sans-serif;
+}
+.tabs nav a {
+    border: 1px solid #666;
+    padding: 10px 20px;
+    margin-bottom: -1px;
+    background-image: linear-gradient(#ddd, #ccc);
+    text-decoration: none;
+    color: #333;
+    border-radius: 6px 6px 0 0;
+}
+.tabs nav a:hover {
+    background-image: linear-gradient(#eee, #ddd);
+}
+.tabs nav .active, .tabs nav .active:hover {
+    background-image: none;
+    border-bottom-color: white;
+}
