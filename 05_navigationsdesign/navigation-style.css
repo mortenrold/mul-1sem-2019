@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
 }
+
+/* simpel menu til højre og logo til venstre */
 section {
     margin-bottom: 60px;
 }
@@ -11,7 +13,7 @@ section {
     justify-content: space-between;
     font-family: sans-serif;
     padding: 15px;
-}
+}   
 .simple a {
     text-decoration: none;
     color: coral;
@@ -52,4 +54,109 @@ section {
 .tabs nav .active, .tabs nav .active:hover {
     background-image: none;
     border-bottom-color: white;
+}
+
+/* knapper på række */
+.knapper {
+    display: flex;
+    justify-content: center;
+}
+.knapper nav {
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+}
+.knapper nav a {
+    text-decoration: none;
+    font-family: helvetica, sans-serif;
+    font-weight: 700;
+    border: 1px solid darkorange;
+    border-radius: 40px;
+    padding: 15px 25px 15px 25px;
+    background-image: linear-gradient(orange, darkorange);
+    color: #603000;
+    width: 60px;
+    text-align: center;
+}
+
+/* drop-down */
+.menu-container {
+    position: relative;
+    z-index: 2; 
+    margin-bottom: 160px;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #5496ac;
+    height: 3em;
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.menu a:hover {
+    background: #60a9c1;
+}
+.menu ul {
+    display: flex;
+    list-style: none;  
+}
+.menu ul li {
+    width: 100%;
+}
+.dropdown {
+    display: flex;
+    flex-direction: column;
+} 
+.dropdown li {
+    display: none;
+}
+.menu li:hover .dropdown li {
+    display: flex;
+    flex-direction: column;
+}
+
+/* billedlinks ("cards") */
+.image-links {
+    display: flex;
+    justify-content: center;
+}
+.image-links img {
+    width: 320px;
+}
+.infobox {
+    position: relative;
+    display: flex;
+    margin: 0.7em;
+}
+.infotext {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 100%;
+    /* sort rgb-farve med alpha-kanel (alpha styrer gennemsigtelighed) */
+    background: rgba(00, 00, 00, 0.6);
+    color: white;
+    /* 1em er det samme som default størrelse */
+    font-size: 1.2em;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.infobox:hover .infotext {
+    visibility: visible;
+    opacity: 1;
 }
