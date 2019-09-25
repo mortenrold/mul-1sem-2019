@@ -154,7 +154,7 @@ section {
     font-size: 1.2em;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.5s;
+    transition: 0.5s;
 }
 .infobox:hover .infotext {
     visibility: visible;
