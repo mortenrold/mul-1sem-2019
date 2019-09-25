@@ -1,0 +1,17 @@
+/* CSS til desktop */
+
+aside {
+    display: flex;
+    width: 20%;
+}
+article {
+    width: 51%;
+}
+/* her kommer en media query inden i dette stylesheet. Man kunne også kalde det for et slags "ministylesheet" inden i et andet stylesheet */
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

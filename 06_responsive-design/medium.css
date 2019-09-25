@@ -1,0 +1,9 @@
+/* CSS til tablets */
+
+.undermenu, .logo {
+    display: flex;
+    width: 23%;
+}
+article, .hovedmenu {
+    width: 73%;
+}
