@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS graphics</title>
+    <style>
+        div {
+            width: 300px;
+            height: 200px;
+            margin-bottom: 40px;
+        }
+        .shadow {
+            background-color: aqua;
+            /* skygge fra venstre - fra top - udtoning - farve */
+            box-shadow: 4px 3px 5px #999;
+        }
+        .rotate {
+            background: brown;
+            transform:rotate(-10deg);
+        }
+        .size {
+            background: #ff8000;
+            transition: width 2s;
+        }
+        .size:hover {
+            width: 100%;
+        }
+        .skyggetekst {
+            text-shadow: 3px 2px 3px #999;
+            font-size: 50px;
+        }
+        .tekst-i-spalter {
+            column-count: 3;
+        }
+        @media screen and (max-width: 960px) {
+            .tekst-i-spalter {
+                column-count: 2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="shadow"></div>
+    <div class="rotate"></div>
+    <div class="size"></div>
+    <div>
+        <h1 class="skyggetekst">Tekst med skygge</h1>
+    </div>
+    <p class="tekst-i-spalter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos placeat officia vero, nam beatae omnis sint molestias dolore cumque magnam nostrum, culpa, voluptatibus animi blanditiis repellendus laudantium sit accusantium ab repellat aliquid quaerat necessitatibus odio perspiciatis. Aliquam nihil quo non, consectetur fuga maxime, voluptate quod, fugit, excepturi ducimus maiores esse aperiam harum. Aspernatur, necessitatibus doloribus officiis asperiores impedit vero iusto! Voluptate sequi nisi natus atque, minus saepe, totam alias fugiat voluptates id, perspiciatis. A animi delectus, deleniti quas quibusdam sint, odit voluptates dignissimos sed tempore assumenda eaque, deserunt culpa illum eos obcaecati autem recusandae nam ut mollitia eius fugiat vitae modi, ullam enim. Dolor libero vel architecto quas neque cupiditate. Ipsam quas rerum totam! Eaque fugit ut doloremque aliquid, officiis ab sequi sed. Praesentium beatae dolorum magnam! Ut quibusdam illum, adipisci molestias rem, aut quo consectetur, fugiat repellat accusamus nesciunt laboriosam ullam iste praesentium voluptate perferendis perspiciatis expedita hic nisi!</p>
+</body>
+</html>
